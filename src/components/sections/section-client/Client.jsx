@@ -3,12 +3,12 @@ import './Client.css';
 
 const Client = () => {
   const clients = [
-    'assets/images/clients/client-1.png',
-    'assets/images/clients/client-2.png',
-    'assets/images/clients/client-3.png',
-    'assets/images/clients/client-4.png',
-    'assets/images/clients/client-5.png',
-    'assets/images/clients/client-6.png',
+    'src/assets/images/clients/client-1.png',
+    'src/assets/images/clients/client-2.png',
+    'src/assets/images/clients/client-3.png',
+    'src/assets/images/clients/client-4.png',
+    'src/assets/images/clients/client-5.png',
+    'src/assets/images/clients/client-6.png',
   ];
 
   return (
