@@ -8,4 +8,5 @@ export default defineConfig({
     host: '0.0.0.0',  // Escuchar en todas las interfaces de red
     port: 5173,        // O el puerto que estés usando
   },
+  base: '/centro-de-asistencia/', // Reemplaza con el nombre de tu repositorio
 })
