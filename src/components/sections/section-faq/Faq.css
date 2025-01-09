@@ -1,85 +1,103 @@
-/*--------------------------------------------------------------
-# Faq Section
---------------------------------------------------------------*/
-.faq-section .faq-title-container {
-    padding-bottom: 20px;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item {
-    position: relative;
-    padding: 20px;
-    margin-bottom: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item h3 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 30px 0 0;
-    transition: 0.3s;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item h3:hover {
-    color: #0056b3;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item .faq-answer {
-    display: block;
-    padding-top: 10px;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item .faq-answer p {
-    margin-bottom: 0;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 18px;
-    line-height: 0;
-    transition: 0.3s;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-toggle.rotated {
-    transform: rotate(90deg);
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item.active {
-    background-color: rgba(0, 0, 255, 0.05);
-    border-color: rgba(0, 0, 255, 0.3);
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item.active h3 {
-    color: #0056b3;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container .faq-item.active .faq-toggle {
-    color: #0056b3;
-  }
-  
-  .faq-section .faq-content-container .faq-items-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  @media (max-width: 768px) {
-    .faq-section .faq-title-container h2 {
-      font-size: 24px;
-    }
-  
-    .faq-section .faq-content-container .faq-items-container .faq-item h3 {
-      font-size: 14px;
-    }
-  }
-  
+/* FAQ Section */
+.faq {
+  padding: 60px 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Título de la sección */
+.faq .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq .section-title h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 10px auto 0;
+}
+
+/* Ajustar el ancho del contenedor de las preguntas */
+.faq-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilo individual de cada pregunta */
+.faq-container .faq-item {
+  position: relative;
+  background: #f9f9f9;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Estilo cuando la pregunta está activa */
+.faq-container .faq-item.faq-active {
+  background: #eef6ff;
+  border-left: 5px solid var(--accent-color);
+}
+
+/* Ajustar el estilo del título de cada pregunta */
+.faq-container .faq-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Cambiar el color al seleccionar */
+.faq-container .faq-item.faq-active h3 {
+  color: var(--accent-color);
+}
+
+/* Ajustar el estilo del contenido de cada respuesta */
+.faq-container .faq-content {
+  padding-left: 15px; /* Asegura que el texto esté pegado al borde izquierdo */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  display: flex; /* Asegura que el contenido de la respuesta esté alineado hacia la izquierda */
+  justify-content: flex-start; /* Mantiene el texto alineado a la izquierda */
+  align-items: flex-start; /* Asegura que el texto se alinee correctamente verticalmente */ 
+}
+
+.faq-container .faq-content p {
+  margin: 0; /* Eliminar margen por defecto */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  width: 100%; /* Asegura que el texto ocupe todo el espacio disponible */
+}
+
+/* Estilo cuando la respuesta está visible */
+.faq-container .faq-active .faq-content {
+  max-height: 200px;
+  padding: 20px 0; /* Añade espacio dentro de la respuesta */
+}
+
+/* Estilo del icono de alternancia */
+.faq-container .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.faq-container .faq-toggle.rotated {
+  transform: rotate(90deg);
+}
