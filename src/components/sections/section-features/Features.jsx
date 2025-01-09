@@ -55,7 +55,7 @@ const Features = () => {
           <div className="col-lg-6">
             <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
               <div className="tab-pane fade active show" id="features-tab-1">
-                <img src="src/assets/images/features-1.jpg" alt="Asistencia en Emergencias del Hogar" className="img-fluid" />
+                <img src="assets/images/features-1.jpg" alt="Asistencia en Emergencias del Hogar" className="img-fluid" />
               </div>
             </div>
           </div>

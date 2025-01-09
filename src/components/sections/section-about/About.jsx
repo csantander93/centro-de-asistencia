@@ -49,9 +49,9 @@ const About = () => {
 
           {/* Imágenes */}
           <div className="col-md-6 about-images-collage" data-aos="fade-up" data-aos-delay="200">
-            <img src="src/assets/images/about/about-company-1.jpg" className="img-fluid" alt="Imagen 1" />
-            <img src="src/assets/images/about/about-company-2.jpg" className="img-fluid" alt="Imagen 2" />
-            <img src="src/assets/images/about/about-company-3.jpg" className="img-fluid" alt="Imagen 3" />
+            <img src="assets/images/about/about-company-1.jpg" className="img-fluid" alt="Imagen 1" />
+            <img src="assets/images/about/about-company-2.jpg" className="img-fluid" alt="Imagen 2" />
+            <img src="assets/images/about/about-company-3.jpg" className="img-fluid" alt="Imagen 3" />
           </div>
         </div>
       </div>
