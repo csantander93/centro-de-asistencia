@@ -1,6 +1,6 @@
 // Componente FAQ.js
 import React, { useState } from 'react';
-import './FAQ.css';
+import './Faq.css';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
