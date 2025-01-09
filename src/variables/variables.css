@@ -1,0 +1,18 @@
+:root {
+  --accent-color: #188daa; /* Azul principal */
+  --contrast-color: #31cbf1; /* Azul secundario */
+  --heading-color: #188daa; /* Azul para títulos */
+  
+  --max-width: 1200px; /* Ancho máximo para el contenido */
+  --default-color: #333;
+  --background-color: #fff;
+
+  /* Colores de navegación */
+  --nav-color: #333;
+  --nav-hover-color: #007bff;
+  --nav-dropdown-color: #333;
+  --nav-dropdown-hover-color: #007bff;
+  --nav-dropdown-background-color: #fff;
+  --nav-mobile-background-color: rgba(33, 37, 41, 0.8);
+  --nav-font: "Arial", sans-serif;
+}

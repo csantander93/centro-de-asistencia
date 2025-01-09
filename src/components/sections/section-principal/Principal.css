@@ -1,0 +1,85 @@
+.principal {
+  background-size: 50%; /* Reduce el tamaño de la imagen al 50% de su tamaño original */
+  display: flex;
+  color: var(--contrast-color);
+  text-align: center; /* Centra el texto */
+  padding-top: 20px; /* Espaciado superior */
+  box-sizing: border-box; /* Asegura que el padding no desplace el contenido */
+  position: relative;
+}
+
+.principal .content {
+  display: flex;
+  flex-direction: column; /* Asegura que los hijos estén en columnas */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.principal .container {
+  color: rgb(54, 52, 52);
+  padding: 10px;
+  border-radius: 12px; /* Bordes más suaves */
+  max-width: 900px; /* Limita el ancho del contenido */
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar el contenido */
+  z-index: 2;
+  position: relative; /* Asegura que el contenido esté por encima del fondo */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+span {
+  color: #188daa;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(54, 52, 52);
+  text-align: center; /* Centra el texto dentro del párrafo */
+}
+
+.principal-logo img {
+  max-width: 60%; /* Ajusta el tamaño de la imagen */
+  margin-top: 20px;
+  max-height: 400px; /* Limita la altura máxima */
+  z-index: 3;
+  position: relative;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .principal {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    height: auto; /* Permite que el contenedor sea más flexible en altura */
+    background-size: cover; /* Asegura que la imagen cubra toda el área sin distorsionarse */
+    padding: 40px; /* Añade más espaciado superior en pantallas pequeñas */
+  }
+  
+  .principal .container {
+    padding: 20px;
+    width: 100%; /* Limita el ancho del contenedor al 90% para móviles */
+    margin-top: 0; /* Elimina el margen superior para acercarlo más al borde superior */
+  }
+
+  h1 {
+    font-size: 28px; /* Reduce el tamaño del título en pantallas pequeñas */
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px; /* Reduce el tamaño del texto */
+    margin-bottom: 20px; /* Añade más espacio debajo del párrafo */
+  }
+
+  .principal-logo img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,52 @@
+.clients {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .client-logo img {
+    max-width: 80px;  /* Tamaño más grande y uniforme */
+    max-height: 80px;
+    width: auto;
+    opacity: 0.7;  /* Se ve apagado por defecto */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .client-logo img:hover {
+    opacity: 1;  /* Al pasar el mouse, se ve con su color real */
+    transform: scale(1.1);  /* Aumenta un poco de tamaño para efecto de hover */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-evenly;  /* Espacio entre los elementos */
+    padding: 0 10px;  /* Espacio en los laterales */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;  /* Permite que los iconos se acomoden en varias filas en pantallas pequeñas */
+    gap: 20px;  /* Espaciado entre los iconos */
+  }
+  
+  @media (max-width: 768px) {
+    .client-logo img {
+      max-width: 60px;  /* Ajusta el tamaño en pantallas más pequeñas */
+      max-height: 60px;
+    }
+  
+    .container {
+      padding: 0 20px;  /* Un poco más de espacio en los laterales en pantallas pequeñas */
+    }
+  }
+  

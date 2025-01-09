@@ -1,0 +1,96 @@
+.featured-services {
+  padding: 0px 20px 40px 20px ;
+}
+
+.featured-services .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.featured-services .service-item {
+  flex: 1 1 calc(33.333% - 20px); /* Tres elementos por fila con espacio */
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.featured-services .service-item .icon {
+  background-color: color-mix(in srgb, #188daa, transparent 80%);
+  width: 72px;
+  height: 72px;
+  margin-right: 15px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+}
+
+.featured-services .service-item .icon i {
+  color: #31cbf1; /* Azul secundario */
+  font-size: 32px;
+  position: relative;
+}
+
+.featured-services .service-item .title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.featured-services .service-item .title a {
+  color: #188daa; /* Azul principal */
+  text-decoration: none;
+}
+
+.featured-services .service-item .title a:hover {
+  color: #31cbf1; /* Azul secundario en hover */
+}
+
+.featured-services .service-item .description {
+  font-size: 14px;
+  color: #555; /* Color gris suave */
+  text-align: left; /* Alinea el texto a la izquierda *
+}
+
+.featured-services .service-item:hover .icon {
+  background-color: #31cbf1; /* Fondo azul secundario en hover */
+}
+
+.featured-services .service-item:hover .icon i {
+  color: #ffffff; /* Íconos en blanco al hacer hover */
+}
+
+/* Responsividad para dispositivos móviles (menos de 768px de ancho) */
+@media (max-width: 768px) {
+  .featured-services .row {
+    padding-left: 0; /* Eliminar el padding izquierdo */
+  }
+
+  .featured-services .service-item {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en dispositivos pequeños */
+    padding-top: 10px; /* Reducir el espacio superior */
+  }
+
+  .featured-services .service-item .icon {
+    width: 50px; /* Reducir el tamaño del ícono */
+    height: 50px; /* Reducir el tamaño del ícono */
+    margin-right: 10px; /* Reducir espacio a la derecha */
+  }
+
+  .featured-services .service-item .title {
+    font-size: 16px; /* Reducir el tamaño del título */
+  }
+
+  .featured-services .service-item .description {
+    font-size: 12px; /* Reducir el tamaño de la descripción */
+  }
+
+  .featured-services .service-item .title a {
+    font-size: 16px; /* Reducir el tamaño de los enlaces */
+  }
+}

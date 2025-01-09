@@ -1,0 +1,219 @@
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Fondo claro para la sección */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra gris clara en toda la sección */
+    border-radius: 15px;
+}
+
+.features .section-title {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features .section-title h2 {
+    font-family: 'Roboto', sans-serif; /* Aplicar fuente Roboto a toda la sección */
+    color: #000;
+    font-size: 32px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
+
+.features .section-title p {
+    font-family: 'Roboto', sans-serif; /* Aplicar fuente Roboto a toda la sección */
+    color: #777777; /* Gris más claro para la descripción */
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+/* Línea debajo del título */
+.features .section-title h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 10px auto 0;
+}
+
+/* Estilo de las pestañas */
+.features .nav-tabs {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.features .nav-item {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra los elementos del <li> */
+}
+
+.features .nav-link {
+    color: #333;
+    border: 0;
+    padding: 60px;
+    transition: 0.3s;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: flex-start; /* Alinea el contenido verticalmente al principio */
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    width: 550px;
+    height: 280px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra gris suave para los enlaces */
+}
+
+/* Estilo para el icono */
+.features .nav-link > i {
+    background-color: var(--surface-color);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px; /* Menos margen para que esté más cerca del texto */
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el texto (h4 y p) */
+.features .nav-link h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    transition: 0.3s;
+    color: #333;
+}
+
+.features .nav-link p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    color: #666;
+    text-align: left;
+}
+
+.features .nav-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Tab Content with Images */
+.features .tab-pane img {
+    width: 85%;
+    height: auto;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+/* Asegurarse de que las columnas ocupen el 50% del ancho */
+.features .container .row {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra gris claro para las filas */
+}
+
+.features .container .row > div {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.features .col-lg-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/*--------------------------------------------------------------
+# Features Section - Mobile Responsiveness
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+    /* Ajustes en la sección de características */
+    .features {
+        padding: 40px 20px; /* Menos espacio en los bordes para móviles */
+    }
+
+    .features .section-title h2 {
+        font-size: 28px; /* Tamaño más pequeño para el título */
+        margin-bottom: 15px;
+    }
+
+    .features .section-title p {
+        font-size: 16px; /* Reducir el tamaño del texto de la descripción */
+        margin-bottom: 40px;
+    }
+
+    .features .nav-link {
+        width: 100%; /* Hacer que los enlaces ocupen el 100% del ancho */
+        height: auto; /* Dejar que la altura se ajuste automáticamente */
+        padding: 40px 20px; /* Reducir el padding para pantallas pequeñas */
+        margin-bottom: 20px; /* Agregar espacio entre las tarjetas */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    .features .nav-link i {
+        margin-right: 0; /* Eliminar margen derecho del icono */
+        width: 45px; /* Reducir tamaño del icono */
+        height: 45px; /* Reducir tamaño del icono */
+        font-size: 24px; /* Reducir tamaño del icono */
+    }
+
+    /* Asegurarse de que las imágenes sean más pequeñas en pantallas móviles */
+    .features .tab-pane img {
+        width: 70%; /* Reducir el tamaño de la imagen */
+        margin: 0 auto;
+        display: block; /* Centrar la imagen */
+    }
+
+    /* Ajustes en el contenedor de la fila */
+    .features .container .row {
+        flex-direction: column; /* Colocar los elementos en columna */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .features .container .row > div {
+        flex: 0 0 100%; /* Asegurar que los elementos ocupen todo el ancho */
+        max-width: 100%; /* Asegurar que los elementos ocupen todo el ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionales para pantallas más pequeñas */
+    .features .section-title h2 {
+        font-size: 24px; /* Asegurar que el título sea más pequeño */
+    }
+
+    .features .section-title p {
+        font-size: 14px; /* Reducir aún más el tamaño del texto */
+    }
+
+    .features .nav-link {
+        padding: 30px 15px; /* Reducir padding en pantallas muy pequeñas */
+    }
+
+    .features .nav-link i {
+        width: 40px; /* Reducir tamaño del icono */
+        height: 40px; /* Reducir tamaño del icono */
+        font-size: 20px; /* Reducir tamaño del icono */
+    }
+
+    .features .tab-pane img {
+        width: 60%; /* Reducir más el tamaño de la imagen en pantallas pequeñas */
+    }
+}
+

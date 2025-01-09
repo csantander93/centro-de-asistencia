@@ -1,0 +1,243 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about-section {
+  padding: 40px 0; /* Espaciado superior e inferior */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px; /* Espacio entre imágenes */
+  text-align: left; /* Alineación del texto */
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  text-align: left; /* Asegura que el texto en la fila también esté alineado */
+}
+
+.about-text {
+  flex: 1.5; /* Reducimos un poco el espacio del texto */
+  padding-left: 20px;
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.about-heading {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 1rem; /* Tamaño reducido de la fuente */
+  font-weight: 500; /* Menos peso para hacerlo más liviano */
+  letter-spacing: 2px; /* Espaciado entre letras para mayor definición */
+  color: #188daa;
+  text-align: left; /* Alineación del encabezado */
+}
+
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333333;
+  text-align: left; /* Alineación del título */
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 20px;
+  text-align: left; /* Alineación de la descripción */
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Alineación de la lista */
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: left; /* Alineación de los ítems de la lista */
+}
+
+.about-list i {
+  margin-right: 10px;
+  color: #188daa; /* Color del ícono de check */
+}
+
+.about-list span {
+  color: #333333; /* Color del texto junto al ícono */
+  font-size: 1rem;
+}
+
+.about-read-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #188daa; /* Fondo turquesa */
+  color: #fff; /* Texto blanco */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease;
+  text-align: left; /* Asegura que el texto del botón también esté alineado */
+}
+
+.about-read-more span {
+  color: #fff; /* Texto blanco */
+  font-weight: bold;
+  padding: 5px;
+}
+
+.about-read-more:hover {
+  background-color: #31cbf1;
+}
+
+.about-images-collage {
+  flex: 1.5; /* Aumentamos el espacio para las imágenes */
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten si es necesario */
+  gap: 15px; /* Espacio entre imágenes */
+  width: 100%; /* Asegura que ocupe todo el espacio disponible */
+  text-align: left; /* Asegura que las imágenes se alineen correctamente */
+}
+
+.about-images-collage img {
+  object-fit: cover; /* Recorta las imágenes si es necesario */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* Asegura que las imágenes se ajusten al tamaño del contenedor */
+}
+
+/* Distribución irregular de las imágenes */
+.about-images-collage img:nth-child(1) {
+  flex: 2; /* Imagen más grande */
+  height: 250px; /* Altura específica */
+}
+
+.about-images-collage img:nth-child(2) {
+  flex: 1.5; /* Imagen más pequeña */
+  height: 250px; /* Altura específica */
+}
+
+.about-images-collage img:nth-child(3) {
+  flex: 1.75; /* Imagen intermedia */
+  height: 200px; /* Altura específica */
+}
+
+.about-images-collage img:nth-child(4) {
+  flex: 2.5; /* Imagen más grande */
+  height: 220px; /* Altura específica */
+}
+
+.about-images-collage img:nth-child(5) {
+  flex: 1.25; /* Imagen más pequeña */
+  height: 160px; /* Altura específica */
+}
+
+/* Efecto de hover para las imágenes, que aumenta el tamaño un poco */
+.about-images-collage img:hover {
+  transform: scale(1.05); /* Agranda la imagen al pasar el mouse */
+}
+
+.about-heading {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 1rem; /* Tamaño reducido de la fuente */
+  font-weight: 500; /* Menos peso para hacerlo más liviano */
+  letter-spacing: 2px; /* Espaciado entre letras para mayor definición */
+  color: #188daa;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about-list i {
+  margin-right: 10px;
+  color: #188daa; /* Color del ícono de check */
+}
+
+.about-list span {
+  color: #333333; /* Color del texto junto al ícono */
+  font-size: 1rem;
+}
+
+.about-read-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #188daa; /* Fondo turquesa */
+  color: #fff; /* Texto blanco */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease;
+}
+
+.about-read-more span {
+  color: #fff; /* Texto blanco */
+  font-weight: bold;
+  padding: 5px;
+}
+
+.about-read-more:hover {
+  background-color: #31cbf1;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px 10px;
+  }
+
+  /* La columna de texto ocupa el 100% en móviles */
+  .about-text {
+    flex: 1 1 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Las imágenes se apilan verticalmente en móviles */
+  .about-images-collage {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-images-collage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    border-radius: 8px;
+  }
+}

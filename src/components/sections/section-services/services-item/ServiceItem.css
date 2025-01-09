@@ -1,0 +1,132 @@
+/*------------------------
+ Service Item Styles
+------------------------*/
+.service-item-container {
+  flex: 0 0 45%;
+  margin-bottom: 30px;
+  text-align: left; /* Alinear el contenido a la izquierda */
+}
+
+.service-item-box {
+  display: flex;
+  padding: 30px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  align-items: flex-start; /* Alinear los elementos dentro del contenedor */
+}
+
+.service-item-icon {
+  font-size: 32px;
+  margin-right: 20px;
+  width: 72px;
+  height: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  color: inherit; /* Asegura que el color se herede correctamente del contenedor */
+}
+
+.service-item-content {
+  flex-grow: 1;
+  text-align: left; /* Alinear el contenido del item a la izquierda */
+}
+
+.service-item-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333333;
+  text-align: left; /* Alinear el título a la izquierda */
+}
+
+.service-item-description {
+  font-size: 16px;
+  color: #777777; /* Gris más claro para la descripción */
+  margin-bottom: 20px;
+  text-align: left; /* Alinear la descripción a la izquierda */
+}
+
+.service-item-link {
+  font-size: 14px;
+  color: var(--link-color);
+  display: inline-flex;
+  align-items: center;
+  text-align: left; /* Alinear el link a la izquierda */
+}
+
+.service-item-link i {
+  margin-left: 10px;
+}
+
+/*-----------------------
+Color Variants
+-----------------------*/
+.cyan .service-item-icon {
+  background-color: rgba(13, 202, 240, 0.1);
+  border: 1px solid #0dcaf0;
+  color: #0dcaf0; /* Color del ícono */
+}
+
+.orange .service-item-icon {
+  background-color: rgba(253, 126, 20, 0.1);
+  border: 1px solid #fd7e14;
+  color: #fd7e14; /* Color del ícono */
+}
+
+.teal .service-item-icon {
+  background-color: rgba(32, 201, 151, 0.1);
+  border: 1px solid #20c997;
+  color: #20c997; /* Color del ícono */
+}
+
+.red .service-item-icon {
+  background-color: rgba(223, 21, 4, 0.1);
+  border: 1px solid #df1529;
+  color: #df1529; /* Color del ícono */
+}
+
+.indigo .service-item-icon {
+  background-color: rgba(102, 16, 242, 0.1);
+  border: 1px solid #6610f2;
+  color: #6610f2; /* Color del ícono */
+}
+
+.pink .service-item-icon {
+  background-color: rgba(243, 38, 140, 0.1);
+  border: 1px solid #f3268c;
+  color: #f3268c; /* Color del ícono */
+}
+
+/*------------------------------
+Responsive Styles for Mobile
+------------------------------*/
+@media (max-width: 768px) {
+  /* Adaptar el contenedor de los items */
+  .service-item-container {
+    flex: 0 0 100%; /* Hacer que cada item ocupe el 100% del ancho */
+    margin-bottom: 20px;
+  }
+
+  .service-item-box {
+    padding: 20px;
+  }
+
+  .service-item-icon {
+    font-size: 24px; /* Reducir el tamaño del icono en móviles */
+    width: 56px;
+    height: 56px;
+  }
+
+  .service-item-title {
+    font-size: 18px; /* Reducir tamaño del título */
+  }
+
+  .service-item-description {
+    font-size: 14px; /* Reducir tamaño de la descripción */
+  }
+
+  .service-item-link {
+    font-size: 12px; /* Reducir tamaño del link */
+  }
+}

@@ -1,0 +1,17 @@
+/* src/index.css */
+@import '../src/variables/variables.css';
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  font-family: var(--nav-font);
+  scroll-behavior: unset; /* Para desplazamiento suave */
+}

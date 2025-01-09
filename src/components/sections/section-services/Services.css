@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services-section {
+  padding: 50px 0;
+  font-family: 'Roboto', sans-serif; /* Aplicar fuente Roboto a toda la sección */
+}
+
+.section-title-container {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700; /* Negrita para el título */
+  color: #333333; /* Gris oscuro para el título */
+  margin-bottom: 50px;
+}
+
+/* Línea debajo del título */
+.services-section .section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color); /* Usar el color de acento que prefieras */
+  margin: 10px auto 0;
+}
+
+.section-description {
+  font-size: 18px;
+  font-weight: 400; /* Normal para la descripción */
+  color: #777777; /* Gris más claro para la descripción */
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Sombreado para el contenedor de ServiceItem */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff; /* Fondo blanco para resaltar el sombreado */
+}
+
+/* Sombreado en los ServiceItem individuales */
+.services-row > div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.services-row > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+/*------------------------------
+Responsive Layout for Services Section
+------------------------------*/
+@media (max-width: 768px) {
+  .services-section {
+    padding: 30px 15px; /* Reducir padding en la sección */
+  }
+
+  .section-title {
+    font-size: 28px; /* Reducir tamaño del título */
+    margin-bottom: 20px;
+  }
+
+  .services-container {
+    padding: 0 10px;
+  }
+
+  .services-row {
+    flex-direction: column; /* Cambiar la dirección a columna */
+    gap: 20px; /* Reducir el espacio entre los items */
+  }
+}
