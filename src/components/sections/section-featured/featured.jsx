@@ -1,5 +1,5 @@
 import React from "react";
-import "./Featured.css"; // Archivo CSS con los estilos proporcionados
+import "./Featured.css"
 
 const Featured = () => {
   return (
