@@ -7,7 +7,7 @@ import Header from "./components/header/Header";
 import About from "./components/sections/section-about/About";
 import Principal from "./components/sections/section-principal/Principal";
 import Features from "./components/sections/section-features/Features";
-import Services from "./components/sections/section-Services/Services";
+import Services from "./components/sections/section-services/Services";
 import Contact from "./components/sections/section-contact/Contact";
 import Featured from "./components/sections/section-featured/featured";
 import Client from "./components/sections/section-client/Client";
