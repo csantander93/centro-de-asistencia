@@ -1,0 +1,182 @@
+/* Estilos para la sección de testimonios */
+.testimonials-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.testimonials-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  opacity: 0.5; /* Tarjetas laterales opacas */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.9); /* Tarjetas laterales más pequeñas */
+}
+
+.swiper-slide-active {
+  opacity: 1; /* Tarjeta activa completamente visible */
+  transform: scale(1); /* Tarjeta activa más grande */
+}
+
+.swiper-slide-prev, .swiper-slide-next {
+  opacity: 0.5; /* Tarjetas al lado de la activa opacas */
+  transform: scale(0.9); /* Tarjetas al lado de la activa más pequeñas */
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05); /* Aumenta ligeramente la tarjeta al pasar el mouse */
+}
+
+/* Estilos adicionales para la tarjeta */
+.testimonial-card {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .testimonial-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+  margin: 0 auto 10px;
+}
+
+.testimonial-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.testimonial-card h4 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .stars {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .stars i {
+  color: #ffd700; /* Gold color for stars */
+  margin-right: 2px;
+  font-size: 15px;
+}
+
+/* Swiper Configuration for Slide Transitions */
+.swiper-slide-prev, .swiper-slide-next {
+  opacity: 0.5; /* Opacidad de las tarjetas adyacentes */
+  transform: scale(0.9); /* Tamaño más pequeño para las tarjetas adyacentes */
+}
+
+/* Tarjeta activa */
+.swiper-slide-active {
+  opacity: 1; /* Totalmente visible */
+  transform: scale(1); /* Tamaño completo */
+}
+
+/* Estilo para los puntos de navegación */
+.swiper-pagination {
+  margin-top: 20px; /* Aumenta el espacio entre las tarjetas y los puntos */
+}
+
+/* Responsive Design */
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 20px; /* Reduce el tamaño del título en dispositivos pequeños */
+    margin-bottom: 15px;
+  }
+
+  .testimonials-grid {
+    display: block; /* Las tarjetas se apilan verticalmente */
+    gap: 15px; /* Reduce el espacio entre las tarjetas */
+  }
+
+  .testimonial-card {
+    flex: 1 1 100%; /* 1 columna en vez de 3 */
+    max-width: 100%;
+    padding: 15px; /* Reduce el padding de las tarjetas */
+  }
+
+  .testimonial-card h3 {
+    font-size: 14px; /* Reducir el tamaño del nombre */
+  }
+
+  .testimonial-card h4 {
+    font-size: 12px; /* Reducir el tamaño del cargo */
+  }
+
+  .testimonial-card p {
+    font-size: 12px; /* Reducir el tamaño de la descripción */
+  }
+
+  .testimonial-card .stars i {
+    font-size: 12px; /* Reducir el tamaño de las estrellas */
+  }
+
+  .swiper-pagination {
+    margin-top: 15px; /* Reduce el margen superior entre las tarjetas y los puntos */
+  }
+}
+
+/* Para pantallas más pequeñas que 480px (celulares muy pequeños) */
+@media (max-width: 480px) {
+  .testimonials-title {
+    font-size: 18px; /* Aumenta la legibilidad en pantallas muy pequeñas */
+  }
+
+  .testimonial-card h3 {
+    font-size: 12px; /* Ajuste de nombre */
+  }
+
+  .testimonial-card h4 {
+    font-size: 10px; /* Ajuste de cargo */
+  }
+
+  .testimonial-card p {
+    font-size: 10px; /* Ajuste de texto de testimonio */
+  }
+
+  .testimonial-card .stars i {
+    font-size: 10px; /* Ajuste de tamaño de estrellas */
+  }
+}

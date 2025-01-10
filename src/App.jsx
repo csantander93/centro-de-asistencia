@@ -12,6 +12,7 @@ import Contact from "./components/sections/section-contact/Contact";
 import Client from "./components/sections/section-client/Client";
 import Faq from "./components/sections/section-faq/Faq";
 import Featured from "./components/sections/section-featured/Featured";
+import Testimonials from "./components/sections/section-testimonials/Testimonials";
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
       <Services />
       <Client />
       <Faq/>
+      <Testimonials />
       <Contact />
       <Footer />
     </>

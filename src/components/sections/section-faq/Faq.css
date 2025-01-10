@@ -101,3 +101,52 @@
 .faq-container .faq-toggle.rotated {
   transform: rotate(90deg);
 }
+
+/* -------------------------------- */
+/* Estilos Responsivos (Mobile First) */
+/* -------------------------------- */
+
+/* En pantallas más pequeñas, reducir el padding y el tamaño de fuente */
+@media (max-width: 768px) {
+  .faq .section-title h2 {
+    font-size: 24px; /* Reducir tamaño del título */
+    margin-bottom: 15px;
+  }
+
+  .faq-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .faq-container .faq-item {
+    padding: 15px; /* Reducir el padding de cada pregunta */
+    margin-bottom: 15px; /* Reducir el margen entre preguntas */
+  }
+
+  .faq-container .faq-item h3 {
+    font-size: 14px; /* Reducir tamaño de la fuente de las preguntas */
+  }
+
+  .faq-container .faq-content p {
+    font-size: 14px; /* Reducir el tamaño de la fuente de las respuestas */
+  }
+
+  .faq-container .faq-toggle {
+    font-size: 14px; /* Reducir el tamaño del icono */
+  }
+}
+
+/* Para pantallas de móvil muy pequeñas (como teléfonos en orientación vertical) */
+@media (max-width: 480px) {
+  .faq-container .faq-item {
+    padding: 12px; /* Aún más pequeño el padding */
+  }
+
+  .faq-container .faq-item h3 {
+    font-size: 13px; /* Asegura que el texto de la pregunta se ajuste */
+  }
+
+  .faq-container .faq-content p {
+    font-size: 12px; /* Asegura que las respuestas también sean más pequeñas */
+  }
+}
