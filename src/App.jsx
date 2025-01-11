@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importa los estilos de AOS
 
-import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import About from "./components/sections/section-about/About";
 import Principal from "./components/sections/section-principal/Principal";
@@ -13,6 +12,7 @@ import Faq from "./components/sections/section-faq/Faq";
 import Featured from "./components/sections/section-featured/Featured";
 import Testimonials from "./components/sections/section-testimonials/Testimonials";
 import ContactForm from "./components/sections/section-contact/ContactForm";
+import Footer from "./components/footer/Footer";
 
 function App() {
   useEffect(() => {

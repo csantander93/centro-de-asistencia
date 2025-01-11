@@ -1,40 +1,132 @@
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 14px;
+  line-height: 1.5; /* Mejoramos la legibilidad */
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left; /* Alineamos el contenido de las secciones */
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p,
+.footer-contact p,
+.footer-links-section ul {
+  margin: 10px 0;
+}
+
+.footer-contact p {
+  font-size: 14px; /* Ajustamos el tamaño del texto */
+  margin: 5px 0; /* Espaciado uniforme */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre íconos y texto */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px; /* Tamaño uniforme */
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #ddd;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 13px; /* Reducimos el tamaño para mantener jerarquía */
+  color: #ccc; /* Color más claro para mayor contraste */
+}
+
+.footer-bottom a {
+  color: #ccc; /* Contraste adecuado */
+  text-decoration: none;
+}
+
+.footer-bottom p {
+  color: #ccc; /* Contraste adecuado */
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ddd;
+}
+
+/* Regla para pantallas pequeñas */
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px 10px; /* Reducimos el padding general */
   }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+  .footer-container {
+    grid-template-columns: 1fr; /* Una columna para todo el contenido */
+    gap: 10px; /* Menor separación entre elementos */
+    text-align: center; /* Centramos el texto en pantallas pequeñas */
   }
-  
-  .footer p {
-    margin: 0;
-    font-size: 14px;
+
+  .footer-contact p {
+    flex-direction: column; /* Apilamos el texto e íconos verticalmente */
+    gap: 4px; /* Menor separación vertical */
   }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
+
+  .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    gap: 10px;
+    padding: 10px 0; /* Añadimos espacio superior e inferior */
   }
-  
+
+  .social-icons a {
+    font-size: 18px; /* Reducimos el tamaño de los íconos */
+  }
+
   .footer-links li {
-    margin: 0 15px;
+    margin: 10px 0; /* Mayor espacio entre enlaces */
   }
-  
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+
+  .footer-bottom {
+    font-size: 12px; /* Reducimos un poco el texto final */
   }
-  
-  .footer-links a:hover {
-    color: #ddd;
-  }
-  
+}
