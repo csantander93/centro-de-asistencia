@@ -6,6 +6,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import './Testimonials.css';
 
+import testimonialImg1 from '../../../assets/images/testimonials/testimonials-1.png';
+import testimonialImg2 from '../../../assets/images/testimonials/testimonials-2.png';
+import testimonialImg3 from '../../../assets/images/testimonials/testimonials-3.png';
+import testimonialImg4 from '../../../assets/images/testimonials/testimonials-4.png';
+import testimonialImg5 from '../../../assets/images/testimonials/testimonials-5.png';
+import testimonialImg6 from '../../../assets/images/testimonials/testimonials-6.png';
+import testimonialImg7 from '../../../assets/images/testimonials/testimonials-7.png';
+import testimonialImg8 from '../../../assets/images/testimonials/testimonials-8.png';
+import testimonialImg9 from '../../../assets/images/testimonials/testimonials-9.png';
+import testimonialImg10 from '../../../assets/images/testimonials/testimonials-10.png';
 
 const Testimonials = () => {
   return (
@@ -34,7 +44,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-1.png"
+                src={testimonialImg1}
                 className="testimonial-img"
                 alt="Diego González"
               />
@@ -60,7 +70,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-2.png"
+                src={testimonialImg2}
                 className="testimonial-img"
                 alt="Carla Rodríguez"
               />
@@ -86,7 +96,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-3.png"
+                src={testimonialImg3}
                 className="testimonial-img"
                 alt="Bibiana Martínez"
               />
@@ -112,7 +122,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-4.png"
+                src={testimonialImg4}
                 className="testimonial-img"
                 alt="Martín López"
               />
@@ -138,7 +148,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-5.png"
+                src={testimonialImg5}
                 className="testimonial-img"
                 alt="Gerardo Luque"
               />
@@ -164,7 +174,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-6.png"
+                src={testimonialImg6}
                 className="testimonial-img"
                 alt="Hector Juarez"
               />
@@ -190,7 +200,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-7.png"
+                src={testimonialImg7}
                 className="testimonial-img"
                 alt="Rita Gómez"
               />
@@ -216,7 +226,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-8.png"
+                src={testimonialImg8}
                 className="testimonial-img"
                 alt="Marcos Peralta"
               />
@@ -242,7 +252,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-9.png"
+                src={testimonialImg9}
                 className="testimonial-img"
                 alt="Edgard Ramírez"
               />
@@ -268,7 +278,7 @@ const Testimonials = () => {
             </p>
             <div className="profile mt-auto">
               <img
-                src="src/assets/images/testimonials/testimonials-10.png"
+                src={testimonialImg10}
                 className="testimonial-img"
                 alt="Janet Álvarez"
               />

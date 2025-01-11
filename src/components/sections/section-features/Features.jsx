@@ -1,6 +1,9 @@
 import React from "react";
 import "./Features.css";
 
+// Importar las imágenes
+import featureImage1 from "../../../assets/images/features-1.jpg";
+
 const Features = () => {
   return (
     <section id="features" className="features section">
@@ -55,7 +58,8 @@ const Features = () => {
           <div className="col-lg-6">
             <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
               <div className="tab-pane fade active show" id="features-tab-1">
-                <img src="src/assets/images/features-1.jpg" alt="Asistencia en Emergencias del Hogar" className="img-fluid" />
+                {/* Usando la imagen importada */}
+                <img src={featureImage1} alt="Asistencia en Emergencias del Hogar" className="img-fluid" />
               </div>
             </div>
           </div>

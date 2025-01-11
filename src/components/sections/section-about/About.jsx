@@ -1,6 +1,11 @@
 import React from "react";
 import "./About.css";
 
+// Importa las imágenes
+import image1 from "../../../assets/images/about/about-company-1.jpg";
+import image2 from "../../../assets/images/about/about-company-2.jpg";
+import image3 from "../../../assets/images/about/about-company-3.jpg";
+
 const About = () => {
   return (
     <section id="about" className="about-section">
@@ -49,9 +54,9 @@ const About = () => {
 
           {/* Imágenes */}
           <div className="col-md-6 about-images-collage" data-aos="fade-up" data-aos-delay="200">
-            <img src="src/assets/images/about/about-company-1.jpg" className="img-fluid" alt="Imagen 1" />
-            <img src="src/assets/images/about/about-company-2.jpg" className="img-fluid" alt="Imagen 2" />
-            <img src="src/assets/images/about/about-company-3.jpg" className="img-fluid" alt="Imagen 3" />
+            <img src={image1} className="img-fluid" alt="Imagen 1" />
+            <img src={image2} className="img-fluid" alt="Imagen 2" />
+            <img src={image3} className="img-fluid" alt="Imagen 3" />
           </div>
         </div>
       </div>

@@ -1,4 +1,8 @@
+import React from "react";
 import "./Principal.css";
+
+// Importa la imagen
+import centroAsistenciasLogo from "../../../assets/images/centro-asistencias.jpg";
 
 const Principal = () => {
   return (
@@ -9,7 +13,8 @@ const Principal = () => {
           <p>En donde su bienestar es nuestra prioridad!</p>
         </div>
         <div className="principal-logo">
-          <img src="src/assets/images/centro-asistencias.jpg" alt="Centro de Asistencias" />
+          {/* Usando la imagen importada */}
+          <img src={centroAsistenciasLogo} alt="Centro de Asistencias" />
         </div>
       </div>
     </section>
