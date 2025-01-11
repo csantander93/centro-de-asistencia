@@ -1,0 +1,289 @@
+/* Estilo General */
+.contact.section {
+  padding: 60px;
+  background-color: #f8f9fa;
+}
+
+.contact .section-title h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact .section-title h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.contact .section-title p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Cuadros de Información de Contacto */
+.contact .info-item {
+  min-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Agregar borde punteado alrededor de los íconos */
+.contact .info-item i {
+  font-size: 28px;
+  color: var(--accent-color); /* Puedes mantener este color si lo prefieres */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contact .info-item i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px dashed var(--accent-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+.contact .info-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.contact .info-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact .row.gy-4.mt-1 {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;    /* Centrar verticalmente */
+  min-height: 100vh;      /* Hacer que ocupe toda la altura de la pantalla */
+  margin: 0;              /* Asegurarse de que no haya márgenes que afecten la alineación */
+}
+
+.contact .email-form {
+  display: flex; /* Activar Flexbox en el formulario */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  flex-direction: column; /* Asegurar que otros elementos estén alineados en columna */
+}
+
+
+/* Formulario */
+.contact .email-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.contact .email-form .form-control {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact .email-form .form-control:focus {
+  border-color: var(--accent-color); /* Cambia el color del borde al color de acento */
+  outline: none; /* Elimina el borde azul predeterminado del navegador */
+}
+
+
+.contact .email-form textarea {
+  resize: none;
+}
+
+.contact .email-form textarea.form-control {
+
+  max-width: 1010px; /* Asegura que el ancho del textarea sea igual al de los inputs */
+  box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho total */
+}
+
+.contact .email-form button[type="submit"] {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact .email-form button[type="submit"]:hover {
+  background-color: var(--contrast-color);
+}
+
+/* Estilo General */
+.contact.section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.contact .section-title h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact .section-title h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.contact .section-title p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Cuadros de Información de Contacto */
+.contact .info-item {
+  min-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Agregar borde punteado alrededor de los íconos */
+.contact .info-item i {
+  font-size: 28px;
+  color: var(--accent-color); /* Puedes mantener este color si lo prefieres */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contact .info-item i::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px dashed var(--accent-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.contact .info-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+
+.contact .info-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact .row.gy-4.mt-1 {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;    /* Centrar verticalmente */
+  min-height: 500px;      /* Hacer que ocupe toda la altura de la pantalla */
+  margin: 0;              /* Asegurarse de que no haya márgenes que afecten la alineación */
+  flex-wrap: wrap;        /* Permite que los elementos se ajusten en múltiples filas */
+}
+
+.contact .email-form {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  flex-direction: column; /* Asegurar que otros elementos estén alineados en columna */
+}
+
+.contact .col-lg-6, 
+.contact .col-lg-3 {
+  flex: 1 1 0; /* Permitir flexibilidad de ancho */
+  max-width: 100%; /* Evitar desbordamiento */
+}
+
+.form-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+
+/* Media query para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+  .contact .info-item {
+    width: 100%; /* Cada cuadro ocupa el 100% del ancho disponible */
+    margin-bottom: 15px; /* Agregar espacio entre los cuadros */
+  }
+
+  .contact .row.gy-4.mt-1 {
+    flex-direction: column; /* Los cuadros de información se apilan verticalmente */
+    align-items: center; /* Centrar los cuadros */
+    justify-content: flex-start; /* Asegurar que estén alineados hacia el principio */
+  }
+
+  .contact .section-title h2 {
+    font-size: 28px; /* Reducir el tamaño de la fuente del título */
+  }
+
+  .contact .section-title p {
+    font-size: 14px; /* Reducir el tamaño del texto de la descripción */
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .email-form textarea.form-control {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+  }
+}
