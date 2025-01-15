@@ -9,10 +9,27 @@
 }
 
 .principal .content {
+  position: relative;
   display: flex;
-  flex-direction: column; /* Asegura que los hijos estén en columnas */
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  flex-direction: column;
+  width: 100%;
+  z-index: 0; /* Asegura que el contenido esté por encima del pseudo-elemento */
 }
+
+.principal .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../assets/images/principal-div.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  opacity: 0.1; /* Aplica transparencia solo al fondo */
+  z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
 
 .principal .container {
   color: rgb(54, 52, 52);
@@ -21,7 +38,6 @@
   max-width: 900px; /* Limita el ancho del contenido */
   margin: 0 auto; /* Centra horizontalmente */
   text-align: center; /* Centra el texto */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar el contenido */
   z-index: 2;
   position: relative; /* Asegura que el contenido esté por encima del fondo */
   align-items: center; /* Centra horizontalmente */
