@@ -43,6 +43,12 @@ const ContactForm = () => {
     }
   };
 
+  const handlePhoneInput = (e) => {
+    // Solo permitir números en el campo
+    const value = e.target.value.replace(/\D/g, ''); // Elimina cualquier carácter no numérico
+    e.target.value = value;
+  };
+
   return (
     <section id="contact" className="contact section">
       <div className="container section-title" data-aos="fade-up">
@@ -124,6 +130,8 @@ const ContactForm = () => {
                   name="phone_area"
                   placeholder="Cod. de área (ej. 11)"
                   required
+                  onInput={handlePhoneInput}
+                  pattern="\d*" // Solo números
                 />
                 <input
                   type="text"
@@ -131,6 +139,8 @@ const ContactForm = () => {
                   name="phone_number"
                   placeholder="Número de Tel. (ej. 12345678)"
                   required
+                  onInput={handlePhoneInput}
+                  pattern="\d*" // Solo números
                 />
                 <input
                   type="text"
@@ -153,22 +163,24 @@ const ContactForm = () => {
                 </button>
               </div>
             </form>
-
-            {errorMessage && (
-              <div className="error-message">
-                <p>{errorMessage}</p>
-              </div>
-            )}
           </div>
         </div>
       </div>
+        {errorMessage && (
+          <Popup 
+            message={errorMessage} 
+            onClose={() => setErrorMessage(null)} 
+            type="error" 
+          />
+        )}
 
-      {showPopup && (
-        <Popup
-          message="Mensaje enviado correctamente. A la brevedad nos estaremos poniendo en contacto con usted."
-          onClose={() => setShowPopup(false)}
-        />
-      )}
+        {showPopup && (
+          <Popup 
+            message="Mensaje enviado correctamente. A la brevedad nos estaremos poniendo en contacto con usted." 
+            onClose={() => setShowPopup(false)} 
+            type="success" 
+          />
+        )}
     </section>
   );
 };

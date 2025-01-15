@@ -38,6 +38,36 @@
   background-color: var(--contrast-color);
 }
 
+/* Estilo para mensajes de error */
+.popup-error {
+  background: #ffffff;  /* Fondo rojo suave */
+  color: #da3041;         /* Texto en rojo oscuro */
+  border: 1px solid #f5c6cb;  /* Borde rojo suave */
+}
+
+.popup-error .popup-close-btn {
+  background-color: #9e2632;
+}
+
+.popup-error .popup-close-btn:hover {
+  background-color: #c92535;
+}
+
+/* Estilo para mensajes de éxito */
+.popup-success {
+  background: #ffffff;  /* Fondo verde suave */
+  color: #228d3b;        /* Texto en verde oscuro */
+  border: 1px solid #c3e6cb;  /* Borde verde suave */
+}
+
+.popup-success .popup-close-btn {
+  background-color: var(--accent-color);
+}
+
+.popup-success .popup-close-btn:hover {
+  background-color: var(--contrast-color);
+}
+
 /* Responsividad para dispositivos móviles */
 @media screen and (max-width: 480px) {
   .popup-content {
