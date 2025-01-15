@@ -42,7 +42,7 @@ const Footer = () => {
           </p>
           <p>
             <a href="mailto:centroasistencias@gmail.com">
-              centroasistencias@gmail.com
+              centroasistenciasrl@gmail.com
             </a>
           </p>
           <p>

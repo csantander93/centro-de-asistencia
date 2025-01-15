@@ -21,10 +21,10 @@ const ContactForm = () => {
     try {
       // Sustituye 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', 'YOUR_USER_ID' con tus credenciales de Email.js
       const result = await emailjs.sendForm(
-        'service_bmv94b2',   // El ID de tu servicio
-        'template_8dub8yf',  // El ID de la plantilla que configuraste en Email.js
+        'service_a25d7u8',   // El ID de tu servicio
+        'template_omns2fb',  // El ID de la plantilla que configuraste en Email.js
         formRef.current,     // El formulario a enviar
-        'NzgQT3psPoPwBNLsd'       // El ID de tu usuario de Email.js
+        't2urFLGfFt1_ZnCpl'       // El ID de tu usuario de Email.js
       );
       console.log(result.text); // Puedes agregar más lógica aquí si necesitas manejar la respuesta
 
@@ -92,7 +92,7 @@ const ContactForm = () => {
             >
               <i className="bi bi-envelope"></i>
               <h3>Email</h3>
-              <p>centroasistencias@gmail.com</p>
+              <p>centroasistenciasrl@gmail.com</p>
             </div>
           </div>
         </div>
