@@ -1,27 +1,46 @@
 import React, { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
 import Popup from '../../popup/Popup';
 import './ContactForm.css';
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');  // Añadido para mostrar mensajes de error
   const formRef = useRef(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage(''); // Limpiar mensaje de error
 
-    // Simulación de un envío exitoso (reemplaza con lógica real)
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    // Prepara los datos del formulario para enviarlos
+    const formData = new FormData(formRef.current);
+    const formValues = Object.fromEntries(formData.entries());
 
-    // Limpiar formulario
-    if (formRef.current) {
-      formRef.current.reset();
+    try {
+      // Sustituye 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', 'YOUR_USER_ID' con tus credenciales de Email.js
+      const result = await emailjs.sendForm(
+        'service_bmv94b2',   // El ID de tu servicio
+        'template_8dub8yf',  // El ID de la plantilla que configuraste en Email.js
+        formRef.current,     // El formulario a enviar
+        'NzgQT3psPoPwBNLsd'       // El ID de tu usuario de Email.js
+      );
+      console.log(result.text); // Puedes agregar más lógica aquí si necesitas manejar la respuesta
+
+      // Limpiar formulario
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+
+      // Mostrar popup de éxito
+      setShowPopup(true);
+    } catch (error) {
+      console.error('Error al enviar el correo', error);
+      setErrorMessage('Hubo un problema al enviar el mensaje. Por favor, intenta nuevamente más tarde.'); // Mostrar mensaje de error al usuario
+    } finally {
+      setIsSubmitting(false);
     }
-
-    // Mostrar popup de éxito
-    setShowPopup(true);
-    setIsSubmitting(false);
   };
 
   return (
@@ -134,6 +153,12 @@ const ContactForm = () => {
                 </button>
               </div>
             </form>
+
+            {errorMessage && (
+              <div className="error-message">
+                <p>{errorMessage}</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
