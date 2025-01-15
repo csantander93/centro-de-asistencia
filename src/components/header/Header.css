@@ -97,12 +97,18 @@
   display: none;
   font-size: 35px;
   cursor: pointer;
+  position: absolute; /* Asegura que el ícono esté posicionado de manera absoluta dentro del header */
+  top: 50%; /* Centra verticalmente el ícono */
+  right: 10px; /* Lo mantiene a la derecha */
+  transform: translateY(-50%); /* Ajusta para centrarlo verticalmente */
+  z-index: 1200; /* Asegura que el ícono quede encima de otros elementos */
 }
 
 @media (max-width: 1199px) {
 
   .header-content {
     padding: 0 10px; /* Reducir aún más el padding lateral */
+    position: relative; /* Asegura que los elementos dentro del header estén correctamente posicionados */
   }
 
   .logo-container img {
@@ -118,7 +124,7 @@
   }
 
   .mobile-menu-toggle {
-    display: block;
+    display: block; /* Mostrar el ícono de hamburguesa en móvil */
   }
 
   .navbar {

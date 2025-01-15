@@ -46,7 +46,7 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            <a href="tel:+541160096463">+54 11 6009 6463</a>
+            <a href="tel:+541160096463">0810-268-3762</a>
           </p>
         </div>
 
@@ -89,7 +89,6 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Centro de Asistencias. Todos los derechos reservados.</p>
-        <p>Hecho con ❤️ por <a href="https://www.linkedin.com/in/cristian-santander-03807b17b/" target="_blank" rel="noopener noreferrer">Cristian Santander</a></p>
       </div>
     </footer>
   );

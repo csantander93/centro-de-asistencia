@@ -15,31 +15,31 @@ const Services = () => {
           <ServiceItem 
             iconClass="bi-wrench" 
             title="Asistencia en el Hogar - Plomería" 
-            description="Te ofrecemos asistencia para reparaciones de plomería urgentes, con un monto cubierto de hasta $15.000 por evento, hasta 2 veces al año. ¡Te ayudamos con problemas de cañerías, sifones y más!" 
+            description="Te ofrecemos asistencia para reparaciones de plomería urgentes, ¡Te ayudamos con problemas de cañerías, sifones y más!" 
             colorClass="cyan" 
           />
           <ServiceItem 
             iconClass="bi-fire" 
             title="Asistencia en el Hogar - Gasista" 
-            description="En caso de una emergencia con las instalaciones de gas, enviamos un gasista para reparaciones urgentes. Cobertura de hasta $15.000 por evento, máximo 2 eventos al año." 
+            description="En caso de una emergencia con las instalaciones de gas, enviamos un gasista matriculado para reparaciones urgentes." 
             colorClass="orange" 
           />
           <ServiceItem 
             iconClass="bi-lock" 
             title="Asistencia en el Hogar - Cerrajería" 
-            description="Si pierdes las llaves o se daña la cerradura, te enviamos un cerrajero para resolver el problema. Cobertura de hasta $15.000 por evento, hasta 2 veces al año." 
+            description="Si pierdes las llaves o se daña la cerradura, te enviamos un cerrajero especialista para resolver el problema." 
             colorClass="teal" 
           />
           <ServiceItem 
             iconClass="bi-lightbulb" 
             title="Asistencia en el Hogar - Electricista" 
-            description="Si tienes problemas con el suministro eléctrico en tu hogar, enviamos un electricista para resolverlo rápidamente. Cobertura de hasta $15.000 por evento, máximo 2 eventos al año." 
+            description="Si tienes problemas con el suministro eléctrico en tu hogar, o con alguna mala instalacion previa, enviamos un electricista matriculado para resolverlo rápidamente." 
             colorClass="red" 
           />
           <ServiceItem 
             iconClass="bi-airplane-engines" 
             title="Asistencia al Viajero" 
-            description="Si sufres un percance con tu medio de transporte, te reintegramos hasta $8.500 en gastos de viáticos para que puedas continuar tu viaje sin inconvenientes." 
+            description="Si sufres un percance con tu medio de transporte, te reintegramos gastos de viáticos para que puedas continuar tu viaje sin inconvenientes." 
             colorClass="indigo" 
           />
           <ServiceItem 

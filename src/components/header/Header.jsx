@@ -5,13 +5,9 @@ import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("principal");
+  const [activeLink, setActiveLink] = useState(""); // Estado inicial vacío
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
-  const handleSetActive = (link) => {
-    setActiveLink(link);
-    setMenuOpen(false); // Cierra el menú al seleccionar un enlace
-  };
 
   return (
     <header id="header" className="header-container">
@@ -43,8 +39,11 @@ const Header = () => {
                   to={id}
                   smooth={true}
                   duration={500}
+                  spy={true} // Activa el seguimiento dinámico del enlace
+                  activeClass="active" // Clase CSS a aplicar cuando está activo
                   className={`navbar-link ${activeLink === id ? "active" : ""}`}
-                  onClick={() => handleSetActive(id)}
+                  onSetActive={() => setActiveLink(id)} // Actualiza el estado basado en el scroll
+                  onClick={() => setMenuOpen(false)} // Cierra el menú en móviles
                 >
                   {label}
                 </Link>

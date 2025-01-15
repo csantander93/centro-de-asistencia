@@ -46,8 +46,8 @@ const About = () => {
                 </span>
               </li>
             </ul>
-            <a href="#" className="about-read-more">
-              <span>Leer más</span>
+            <a href="#contact" className="about-read-more">
+              <span>Contáctanos</span>
               <i className="bi bi-arrow-right"></i>
             </a>
           </div>

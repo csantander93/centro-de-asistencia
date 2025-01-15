@@ -10,9 +10,9 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "¿Qué incluye el Plan de $9500 mensuales?",
+      question: "¿Qué incluye el Plan mensual?",
       answer:
-        "El plan incluye asistencia en el hogar para problemas de plomería, gas, electricidad y cerrajería. También tendrás acceso a asesoría legal telefónica y cobertura de hasta $40,000 por evento, máximo 2 veces al año, dentro del territorio argentino.",
+        "El plan incluye asistencia en el hogar para problemas de plomería, gas, electricidad y cerrajería. También tendrás acceso a asesoría legal telefónica y cobertura dentro del territorio argentino.",
     },
     {
       question: "¿Cómo funciona el servicio?",
@@ -27,12 +27,12 @@ const FAQ = () => {
     {
       question: "¿Cuántas veces puedo hacer uso del servicio al año?",
       answer:
-        "El plan cubre hasta dos eventos por año, con un máximo de $40,000 por evento. Si superas este límite, podrás acceder a tarifas adicionales por cada servicio solicitado.",
+        "El plan cubre varios eventos al año pero todo dependera del plan adquirido, revise la poliza que le llegara via mail.",
     },
     {
       question: "¿Cuáles son las condiciones generales del servicio?",
       answer:
-        "El servicio tiene una carencia administrativa de 72 horas, a partir de la cual puedes solicitar un especialista. El precio del servicio es de $6900 mensuales fijos durante un año, con renovación automática después de los 12 meses, y una cláusula de ajuste al monto actual.",
+        "El servicio tiene una carencia administrativa de 72 horas, a partir de la cual puedes solicitar un especialista. El precio del servicio es fijo durante un año, con renovación automática después de los 12 meses, y una cláusula de ajuste al monto actual.",
     },
     {
       question: "¿El servicio cubre reparaciones fuera de mi domicilio?",
