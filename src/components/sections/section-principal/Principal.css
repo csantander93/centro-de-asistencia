@@ -3,7 +3,6 @@
   display: flex;
   color: var(--contrast-color);
   text-align: center; /* Centra el texto */
-  padding-top: 20px; /* Espaciado superior */
   box-sizing: border-box; /* Asegura que el padding no desplace el contenido */
   position: relative;
 }
@@ -26,7 +25,8 @@
   background-image: url('../../../assets/images/principal-div.jpg'); /* Imagen de fondo */
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
-  opacity: 0.1; /* Aplica transparencia solo al fondo */
+  border-radius: 25px;
+  opacity: 0.2; /* Aplica transparencia solo al fondo */
   z-index: -1; /* Coloca el fondo detrás del contenido */
 }
 

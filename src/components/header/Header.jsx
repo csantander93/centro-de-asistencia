@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Header.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-header.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,16 +36,17 @@ const Header = () => {
             ].map(({ id, label }) => (
               <li key={id}>
                 <Link
-                  to={id}
-                  smooth={true}
-                  duration={500}
-                  spy={true} // Activa el seguimiento dinámico del enlace
-                  activeClass="active" // Clase CSS a aplicar cuando está activo
-                  className={`navbar-link ${activeLink === id ? "active" : ""}`}
-                  onSetActive={() => setActiveLink(id)} // Actualiza el estado basado en el scroll
-                  onClick={() => setMenuOpen(false)} // Cierra el menú en móviles
-                >
-                  {label}
+                    to={id}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="active"
+                    className={`navbar-link ${activeLink === id ? "active" : ""}`}
+                    onSetActive={() => setActiveLink(id)}
+                    onClick={() => setMenuOpen(false)}
+                    offset={-70} // Ajusta este valor según la altura del header
+                  >
+                    {label}
                 </Link>
               </li>
             ))}

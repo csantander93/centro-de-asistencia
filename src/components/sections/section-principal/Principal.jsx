@@ -11,7 +11,7 @@ const Principal = () => {
           <h1>
             Bienvenido a <span>Centro de Asistencias</span>
           </h1>
-          <p>En donde su bienestar es nuestra prioridad!</p>
+          <p>En donde tu bienestar es siempre nuestra prioridad!</p>
         </div>
         <div className="principal-logo">
           <img src={centroAsistenciasLogo} alt="Centro de Asistencias" />

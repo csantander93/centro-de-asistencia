@@ -27,7 +27,7 @@ const FAQ = () => {
     {
       question: "¿Cuántas veces puedo hacer uso del servicio al año?",
       answer:
-        "El plan cubre varios eventos al año pero todo dependera del plan adquirido, revise la poliza que le llegara via mail.",
+        "El plan cubre varios eventos al año pero todo dependerá del plan adquirido, revise la poliza que le llegara via mail.",
     },
     {
       question: "¿Cuáles son las condiciones generales del servicio?",
